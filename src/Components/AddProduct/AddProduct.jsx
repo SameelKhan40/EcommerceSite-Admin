@@ -8,7 +8,7 @@ export const AddProduct = () => {
     const [productDetails,setProductDetails] = useState({
         name: "",
         image: "",
-        category: "woman",
+        category: "women",
         new_price: "",
         old_price: "",
     })
@@ -68,7 +68,7 @@ export const AddProduct = () => {
         <div className="addproduct-itemfield">
             <p>Product Category</p>
             <select value={productDetails.category} onChange={changeHandler} name='category' className='add-product-selector'>
-                <option value="women">Woman</option>
+                <option value="women">Women</option>
                 <option value="men">Men</option>
                 <option value="kid">Kid</option>
             </select>
